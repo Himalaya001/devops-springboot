@@ -45,7 +45,7 @@
 
 
 
-	<scm>
+	 <scm>
 
 		<connection>scm:git:git@github.com:Himalaya001/devops-springboot.git</connection>
 
@@ -55,7 +55,7 @@
 
 		<tag>v0.0.1</tag>
 
-	</scm>
+	 </scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
