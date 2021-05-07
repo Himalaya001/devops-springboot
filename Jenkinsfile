@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Prepare') {
-      git url: 'https://github.com/Himalaya001/devops-springboot.git', branch: 'develop'
+      git url: 'https://github.com/sriniharika/devops_springboot.git', branch: 'develop'
       mvnHome = tool 'mvn'
    }
    stage('Build') {
@@ -30,7 +30,7 @@ node {
       }
    }
 stage('Deploy'){
-sh 'curl -u admin:admin -T target/**.war "http://localhost:7080/manager/text/deploy?path=/ibmdevops&update=true"';
+sh 'curl -u admin:admin -T target/devops-springboot-0.1.1.war "http://localhost:7080/manager/text/deploy?path=/ibmdevops&update=true"';
 }
 
 stage('Smoke') {
